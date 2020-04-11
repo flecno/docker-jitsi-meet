@@ -38,6 +38,7 @@ services:
             - JIBRI_RECORDER_USER
             - JIBRI_RECORDER_PASSWORD
             - ENABLE_RECORDING
+            - ENABLE_WEB_ACCESS_LOGS
         networks:
             meet.jitsi:
                 aliases:
@@ -100,7 +101,7 @@ services:
             - JWT_ALLOW_EMPTY
             - JWT_AUTH_TYPE
             - JWT_TOKEN_AUTH_MODULE
-            - LOG_LEVEL
+            - PROSODY_LOG_LEVEL
             - TZ
         networks:
             meet.jitsi:
@@ -128,6 +129,7 @@ services:
             - JIGASI_SIP_URI
             - JIBRI_BREWERY_MUC
             - JIBRI_PENDING_TIMEOUT
+            - JICOFO_LOG_LEVEL
             - TZ
         depends_on:
             - prosody
@@ -156,6 +158,7 @@ services:
             - JVB_TCP_PORT
             - JVB_STUN_SERVERS
             - JVB_ENABLE_APIS
+            - JVB_LOG_LEVEL
             - TZ
         depends_on:
             - prosody
