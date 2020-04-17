@@ -38,7 +38,7 @@ services:
             - JIBRI_RECORDER_USER
             - JIBRI_RECORDER_PASSWORD
             - ENABLE_RECORDING
-            - ENABLE_WEB_ACCESS_LOGS
+            - WEB_LOG_LEVEL
         networks:
             meet.jitsi:
                 aliases:

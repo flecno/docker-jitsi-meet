@@ -399,7 +399,7 @@ Variable | Description | Default value
 `JICOFO_LOG_LEVEL` | Controls which logs are written to stdout. [Supported java log levels](https://docs.oracle.com/javase/8/docs/api/java/util/logging/Level.html) | INFO
 `JIGASI_LOG_LEVEL` | Controls which logs are written to stdout. [Supported java log levels](https://docs.oracle.com/javase/8/docs/api/java/util/logging/Level.html) | INFO
 `JIBRI_LOG_LEVEL` | Controls which logs are written to stdout. [Supported java log levels](https://docs.oracle.com/javase/8/docs/api/java/util/logging/Level.html) | INFO
-`ENABLE_WEB_ACCESS_LOGS` | Controls access logs written to stdout for nginx | true
+`WEB_LOG_LEVEL` | Controls nginx logs written to stdout. INFO enables access logs, ERROR the error logs and OFF disables all (but [`emerg` level](https://nginx.org/en/docs/ngx_core_module.html#error_log) for error logs) | INFO
 `ETHERPAD_DISABLE_IP_LOGGING` | Disable IP logging | false
 `ETHERPAD_LOG_LEVEL` | Controls which logs are written to stdout. Supported levels: DEBUG, INFO, WARN, ERROR | INFO
 
